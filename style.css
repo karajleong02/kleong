@@ -13,9 +13,10 @@
     --fw-reg: 300;
     --fw-bold: 900;
     
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-light: #dce6ec;
+    --clr-dark: #333A56;
+    --clr-accent: #99D3DF;
+    --clor-white: #ecf4f7;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -265,7 +266,7 @@ header {
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
-    color: var(--clr-light);
+    color: var(--clor-white);
     /* background-color: #111; */
 }
 
@@ -304,6 +305,7 @@ header {
         grid-area: image;
         position: relative;
         z-index: 2;
+        max-height: 75px;
     }
 }
 
@@ -324,7 +326,7 @@ header {
 .portfolio__item {
     background: var(--clr-accent);
     overflow:hidden;
-    color: var(--clr-light);
+    color: var(--clor-white);
     font-weight: bold;
     text-decoration: none;
 }
@@ -343,7 +345,7 @@ header {
 
 /* footer */
 .footer {
-    background: #111;
+    background: var(--clr-dark);
     color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
