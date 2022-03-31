@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Kara Leong Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header>
+            <button class = "nav-toggle" aria-label = "toggle navigation" >
+                <span class = "hamburger"></span>
+            </button>
+            <nav class = "nav">
+                <ul class = "nav__list">
+                    
+                    <li class = "nav__item"><a href = "#home" class = "nav__link">Home</a></li>
+                    <li class = "nav__item"><a href = "#about" class = "nav__link">About Me</a></li>
+                    <li class = "nav__item"><a href = "#work" class = "nav__link">Projects</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id = "home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Kara Leong</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">CS @ Georgia Tech</p>
+            <!-- ADD IMAGE OF ME -->
+            <img src="profile.jpg"class="intro__image">
+        </section>
+
+        <!-- About Me -->
+        <div class="about" id = "about">
+            <section class = "about-me" >
+                <h2 class = "section__title section__title--about">Who I am</h2>
+                <p class = "section__subtitle section__subtitle--about">  </p>
+                <div class="about-me__body">
+                    <p>I am a computer science major concentrating in Media and People that allow me to pursue my interests in front-end development. </p>
+                    <p></p>
+                </div>
+                <!-- MAYBE ADD IMAGE -->
+                <img class = "about-me__image">
+                <h3 class = "section__subtitle section__subtitle--skills">Skills</h3>
+                <div class="about-me__body2">
+                    <p>Programming Languages: Java, JavaScript, HTML, CSS, C, Python, Swift</p>
+                    <p>Software: Android Studio, GBA Emulator</p>
+                    <p>Relevant Coursework: Web Development, Media Devices and Architecture, Objects and Design, Data Structures and Algorithms for Applications, Introduction to Object Oriented Programming</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- My Projects-->
+        <section class="my-work" id="work">
+            <h2 class="section__title">My Projects</h2>
+            <p class="section__subtitle">some of my projects</p>
+
+            <div class = "portfolio">
+                <!--Portfolio Item-->
+                <a href="#" class="portfolio__item">
+                    <img src="foodsavior.jpg" alt="Food Savior" class="portfolio__img"> 
+                    <p>Food Savior</p>
+                </a>
+
+                <!--Portfolio Item-->
+                <a href="#" class="portfolio__item">
+                    <img src="tatertower.jpg" alt="Tater Tower"  class="portfolio__img">
+                    <p> Tater Tower [work in progress]</p>
+                </a>
+
+                <!--Portfolio Item-->
+                <a href="#" class="portfolio__item">
+                    <img src="subsaver.jpg" alt="SubSaver" class="portfolio__img">
+                    <p>SubSaver</p>
+                </a>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer">
+            <a href="mailto:karajleong2020@gmail.com" class="footer__link">karajleong2020@gmail.com</a>
+            <!--ADD SOCIALS (github and linkedin)-->
+            <ul class = "social-list">
+                <!--Add links-->
+                <li class = "social-list__item"><a class="social-list__link" href="https://github.gatech.edu/kleong8"><i class="fab fa-github"></i></a></li>
+                <li class = "social-list__item"><a class="social-list__link" href="www.linkedin.com/in/kara-leong"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </footer>
+
+        <script src="index.js"></script>
+
+    </body>
+</html>
