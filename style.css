@@ -279,8 +279,8 @@ header {
         display: grid;
         grid-template-columns: 1fr 200px;
         grid-template-areas:
-            "title image"
-            "subtitlea image"
+            "title title"
+            "subtitle subtitle"
             "text image"
             "text image";
         grid-column-gap: 2em;
@@ -291,7 +291,7 @@ header {
     }
 
     .section__subtitle--about {
-        grid-area: subtitlea;
+        grid-area: subtitle;
         grid-column: 1/-1;
         grid-row: 2;
         position: relative;
@@ -300,15 +300,16 @@ header {
         padding-left: 1em;
         padding-right: calc(200px + 3em);
     }
-
+/* MAYBE PADDING */
     .about-me__image {
         grid-area: image;
         position: relative;
         z-index: 2;
-        max-height: 75px;
+    }
+    .about-me.body {
+        grid-area: text;
     }
 }
-
 /* Projects */
 
 .my-work {
